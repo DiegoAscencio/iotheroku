@@ -112,7 +112,7 @@ app.route('/api/users/:email')
         });
 
         res.status(201).send(usr);
-        fs.writeFileSync('users.json', JSON.stringify(users));
+        fs.writeFileSync('/users.json', JSON.stringify(users));
     })
 
     app.listen(port, () => console.log("IoT Running"));
