@@ -44,6 +44,6 @@ function lechuga(){
 function cebolla(){
     localStorage.plantName = "cebolla";
     imagenPlanta.style.display = '';
-    img.src = "https://dietas.elembarazo.net/wp-content/uploads/sites/6/2012/09/cebolla-217x300.jpg";
+    img.src = "https://image.freepik.com/vector-gratis/cebolla-roja_1268-12406.jpg";
     graficas.style.display = 'none';
 }
