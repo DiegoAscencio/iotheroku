@@ -46,7 +46,7 @@ function editUsr() {
 
 
         let xhr = new XMLHttpRequest();
-        let endpoint = `https://iotequipo2.herokuapp.com/${localStorage.sessionEmail}`
+        let endpoint = `https://iotequipo2.herokuapp.com/api/users/${localStorage.sessionEmail}`
         xhr.open('PUT', endpoint);
         xhr.setRequestHeader('Content-Type', 'application/json');
         xhr.send(JSON.stringify(user));
