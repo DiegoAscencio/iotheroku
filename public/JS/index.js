@@ -38,12 +38,12 @@ function jitomate(){
 function lechuga(){
     localStorage.plantName = "lechuga";
     imagenPlanta.style.display = '';
-    img.src = "https://biotrendies.com/wp-content/uploads/2015/07/lechuga-1000x600.jpg";
+    img.src = "https://www.smartnfinal.com.mx/wp-content/uploads/2017/09/propiedades-de-la-lechuga.jpg";
     graficas.style.display = 'none';
 }
 function cebolla(){
     localStorage.plantName = "cebolla";
     imagenPlanta.style.display = '';
-    img.src = "http://geneseeds.com.mx/wp-content/uploads/Cebolla-Crystal-White-Wax.png";
+    img.src = "https://dietas.elembarazo.net/wp-content/uploads/sites/6/2012/09/cebolla-217x300.jpg";
     graficas.style.display = 'none';
 }
