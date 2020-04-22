@@ -9,6 +9,7 @@ let users = JSON.parse(fs.readFileSync('users.json'));
 
 //Carga de forma global el middleware que permite parsear el json (express.json())
 app.use(express.json());
+app.use(express.static(__dirname + "/public"));
 
 app.use(function(req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
