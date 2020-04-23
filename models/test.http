@@ -1,5 +1,5 @@
 ### Read Channel Feed
-get https://api.thingspeak.com/channels/1023068/feeds.json?api_key=OFB0NR74DCYEUVNX&results=2
+GET https://api.thingspeak.com/channels/1022210/feeds.json
 Content-Type: application/json
 
 ### Read a Channel Field
@@ -11,7 +11,7 @@ GET https://api.thingspeak.com/channels/1023068/status.json?api_key=OFB0NR74DCYE
 Content-Type: application/json
 
 ### Write a Channel Feed
-GET https://api.thingspeak.com/update?api_key=O7YT8XMI4GG4HO0K&field1=0
+GET https://api.thingspeak.com/update?api_key=CKRSUZVI72EZRI14&field2=5
 Content-Type: application/json
 
 
@@ -19,3 +19,8 @@ Content-Type: application/json
 ###new  chan nel
 GET https://api.thingspeak.com/channels/1022210/feeds.json?results=2
 Content-Type: application/json
+
+
+
+
+GET https://api.thingspeak.com/update?api_key=CKRSUZVI72EZRI14&field1=0
