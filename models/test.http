@@ -11,7 +11,7 @@ GET https://api.thingspeak.com/channels/1023068/status.json?api_key=OFB0NR74DCYE
 Content-Type: application/json
 
 ### Write a Channel Feed
-GET https://api.thingspeak.com/update?api_key=CKRSUZVI72EZRI14&field2=5
+GET https://api.thingspeak.com/update?api_key=CKRSUZVI72EZRI14&field1=1&field2=5
 Content-Type: application/json
 
 
