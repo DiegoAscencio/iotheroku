@@ -3,7 +3,7 @@
 const express = require('express');
 const fs = require('fs');
 const app = express();
-const port = process.env.PORT ||3000;
+const port = process.env.PORT || 3000;
 
 let users = JSON.parse(fs.readFileSync('users.json'));
 
@@ -11,16 +11,16 @@ let users = JSON.parse(fs.readFileSync('users.json'));
 app.use(express.json());
 app.use(express.static(__dirname + "/public"));
 
-app.use(function(req, res, next) {
+app.use(function (req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
     res.header('Access-Control-Allow-Methods', 'PUT, POST, GET, DELETE, OPTIONS');
     next();
-  });
+});
 
-//Crea una ruta raíz que solo regresa “Users app práctica 4” 
+//Crea una ruta raíz que solo regresa “Users app” 
 app.get('/', (req, res) => {
-    res.send('Users app práctica 4');
+    res.send('Users app');
 })
 
 
@@ -35,7 +35,7 @@ app.route('/api/users')
         res.send(usrsMap);
     });
 
-    app.route('/api/login')
+app.route('/api/login')
     .get((req, res) => {
         res.send("Seccion de login");
     })
@@ -115,5 +115,4 @@ app.route('/api/users/:email')
         fs.writeFileSync('/users.json', JSON.stringify(users));
     })
 
-    app.listen(port, () => console.log("IoT Running"));
-
+app.listen(port, () => console.log("IoT Running"));
