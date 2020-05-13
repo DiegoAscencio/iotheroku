@@ -24,3 +24,6 @@ Content-Type: application/json
 
 
 GET https://api.thingspeak.com/update?api_key=CKRSUZVI72EZRI14&field1=0
+
+### Write a Channel Feed
+GET https://api.thingspeak.com/update?api_key=CKRSUZVI72EZRI14&field1=50
