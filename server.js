@@ -18,11 +18,10 @@ app.use(function (req, res, next) {
     next();
 });
 
-//Crea una ruta raíz que solo regresa “Users app” 
+//Crea una ruta raíz que solo regresa “Test” 
 app.get('/', (req, res) => {
-    res.send('Users app');
+    res.send('Test');
 })
-
 
 app.route('/api/users')
     .get((req, res) => {
